@@ -1,19 +1,22 @@
 #include <stdio.h>
 
-int main() {
-    // write your code here
-
-
+int main()
+{
     int n;
-    scanf("%d",&n);
-    for (int i =1; i <=n; i++)
+    scanf("%d", &n);
+    if (n == 1)
     {
-    if (i%2==0)
+        printf("-1");
+        /* code */
+    }
+
+    for (int i = 1; i <= n; i++)
     {
-    printf("%d\n",i);
+        if (i % 2 == 0)
+        {
+            printf("%d\n", i);
+        }
     }
-    
-    }
-    
+
     return 0;
 }
